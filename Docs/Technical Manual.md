@@ -150,11 +150,11 @@ Actions can be traded down, but not up. One Offensive action can be traded for s
 Some Offensive actions are considered slow. Slow actions consume some units of movement in addition to the Offensive action.
 
 #### Defensive postures:
-There are two defensive postures one can take:
+There are three defensive postures one can take:
 
 Steady: Allows a unit to make full use of their armor, deflecting incoming attack more readily. Incoming attacks hit against armor value. 
 
-Dodgy: Halves armor value, but allows you to use completely avoid damage the strike misses. Incoming attacks are contested agains dodge stat.
+Dodgy: Halves armor value, but allows you to use completely avoid damage the strike misses. Incoming attacks are contested against dodge stat.
 
 Unguarded: When unconscious, falls into this state. Armor value is halved, and dodge is at zero. also automatically goes prone.
 
@@ -250,11 +250,11 @@ Winged creatures gain a size when they unfurl their wings
 | Size | Max Size in units | Dodge penalty | Speed Adjustment |
 | ---- | ----------------- | ------------- | ---------------- |
 | Mini | 0.5m * 0.5m * 0.5m | 0 | +1 |
-| Small | 1m * 1m * 1m | -5 | +1 |
-| Medium | 2m * 2m * 2m | -10 | 0 |
-| Large | 3m * 3m * 3m | -15 | 0 |
-| Towering | 4m * 4m * 4m | -20 | -1 |
-| Immense | 7m * 7m *7m | -25 | -2 |
+| Small | 1m * 1m * 1m | -2 | +1 |
+| Medium | 2m * 2m * 2m | -4 | 0 |
+| Large | 3m * 3m * 3m | -6 | 0 |
+| Towering | 4m * 4m * 4m | -8 | -1 |
+| Immense | 7m * 7m *7m | -10 | -2 |
 
 ### Carry weight
 Weight is measured in kg be default. A character can only carry so much before they start to feel all of the equipment they're lugging around.
@@ -398,7 +398,7 @@ Creatures can be friendly, neutral or hostile towards each other. There are shad
 - Neutral: Willing to cooperate towards a mutual goal, but will not go out of their way to assist the other party.
 - Hostile: Will not cooperate.
 
-### Food
+#### Food
 Food can be filling, satiating, or mediocre.
 - Filling (5 gold, 2 lbs): Creature does not need to eat for 8 hours of rigorous activity or 12 hours of low level activity
 - Satiating (2 gold, 1 lb): Creature does not need to eat for 4 hours of rigorous activity or 6 hours of low level activity
@@ -521,8 +521,11 @@ Summoned creatures exist separate from the controlling entity. The summons have 
 
 ***Math***
 ----------
+#### Armor value
+(Base Armor value (10) + Hea + Str + Armor Bonus + Shield bonus)
+
 #### Attack roll
-(3 + weapon attk bonus + proficiency + appropriate stat/2) The appropriate stat is determined by whether the attack is magic, melee or ranged. 
+(3 + weapon atk bonus + proficiency + appropriate stat/2) The appropriate stat is determined by whether the attack is magic, melee or ranged. Magic is determined by the magic being LM, DM, or Book, Melee is Bwn, and Ranged is Nim.
 
 #### Damage dealt (Complex)
 (Attack roll + weapon damage bonus - goal value - resistances + weaknesses) * 2 * (percentage / 100) rounded up to nearest whole number.
@@ -531,7 +534,7 @@ Summoned creatures exist separate from the controlling entity. The summons have 
 (Attack roll + weapon damage bonus - goal value - resistances + weaknesses)
 
 #### Dodge
-(base dodge (20) - racial penalty - armor penalty - (weight penalty/2 rounded down) + Nim bonus)
+(base dodge (20) - size penalty - armor penalty - (weight penalty/2 rounded down) + (Nim bonus * 2))
 
 #### Magic Stamina
 (LM * 3) Or (DM * 3) Or (Wit * 3), whichever is highest.

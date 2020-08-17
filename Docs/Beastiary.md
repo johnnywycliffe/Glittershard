@@ -22,7 +22,7 @@ It contains all the information specific to one race, be it Human, Dragon, or Sk
 | Sapient Animal (S) | +1 Nim | Enhanced sense, +2 speed, Subrace (animal) | Small | 15 | 7 | 
 | Sapient Animal (M) | +1 Bwn | Enhanced sense, +2 speed, Subrace (animal) | Medium | 25 | 7 |
 | Sapient Animal (L) | +2 Bwn | Enhanced sense, +2 speed, Subrace (animal) | Large | 30 | 7 |
-| Slimes | +1 Dex | Poor senses, Shapeshifter, Natural backpack, +2 speed | Small | 15 | 7 |
+| Slimes | +1 Nim | Poor senses, Shapeshifter, Natural backpack, +2 speed | Small | 15 | 7 |
 | Waerebeast | +3 Bwn, +3 Nim, -2 Wit | Waere, One enhanced sense, +2 speed, Subrace | Varies | 25 | 7 |
 
 ### Demonic
@@ -40,7 +40,7 @@ It contains all the information specific to one race, be it Human, Dragon, or Sk
 | Dryads | +1 Sur, +1 Hea, +2 LM | Poor touch, Tainted by Light | Medium | 30 | 6 |
 | Faeries | +2 LM | Flying, Tainted by Light | Tiny | 15 | 7 |
 | Elementals | +3 LM, -2 Cha | Tainted by Light | Small | 25 | 6 |
-| High Elves | +1 Wit, -1 Cha, +2 LM | Unsleeping, Tainted by Light | Medium | 20 | 5 |
+| High Elves | +2 Wit, -1 Cha, +2 LM | Unsleeping, Tainted by Light | Medium | 25 | 6 |
 | Naiads | +1 Cha, + 2 LM | Shapeshifting, Tainted by Light | Medium | 20 | 6 |
 | Wood Elves | +1 Sur, +2 LM | Enhanced Sight, Tainted by Light | Medium | 25 | 6 |
 
@@ -50,7 +50,7 @@ It contains all the information specific to one race, be it Human, Dragon, or Sk
 | Elflings | +2 LM/DM, +1 Sur | Gifted | Medium | 20 | 6 |
 | Giants  | +1 BWn, +1 Sur | - | Large | 35 | 6 |
 | Gnomes | +1 LM, +1 Wit, +1 Sur | - | Small | 15 | 7 |
-| Halfers | +1 Dex, +1 Sur | - | Small | 15 | 6 |
+| Halfers | +1 Nim, +1 Sur | - | Small | 15 | 6 |
 | Humans | +1 Wit, +1 Sur | Gifted | Medium | 25 | 6 |
 | Orcs | +1 Bwn, +1 Hea, +1 Sur | - | Medium | 25 | 6 |
 
@@ -59,60 +59,8 @@ It contains all the information specific to one race, be it Human, Dragon, or Sk
 | ---- | ------- | ------ | ---- | ----------- | ------ |
 | Lich | +2 Wit, -1 Cha, +2 DM | Unsleeping, Cursed, Subrace | Medium | 25 | 7 |
 | Vampire | +3 Cha, +3 DM | Vampirism, Cursed, Subrace | Varies | 20 | 6 |
-| Wight | +1 Bwn, +1 Dex, +2 DM | Enhanced Smell, Cursed, Subrace | Medium | 20 | 7 |
+| Wight | +1 Bwn, +1 Nim, +2 DM | Enhanced Smell, Cursed, Subrace | Medium | 20 | 7 |
 | Zombie | +2 Bwn, -1 Cha +2 DM | Poor sight, Cursed, Subrace | Varies | 30 | 6 |
-
-
-***Race Evaluation***
----------------------
-Will be deleted later, or relegated to a custom section.
-
-To make sure races are roughly balanced.
-
-Strong benefits are +2, Weak benefits +1, Weak negatives -1 and Strong negatives are -2. Neutral items are 0.
-
-Health / 5 is how much is added for a health bonus
-
-Size: Dodge penalty / 5, speed penalty is directly applied. This works to:
-- Tiny = +1
-- Small = 0
-- Med = -2
-- Lg = -3
-- Tow = -5
-- Immense = -7
-If speed varies, assume Medium
-
-Strong benefits:
-- Breath Weapon
-- Bull Rush
-- Shapeshifter
-
-Weak benefits:
-- Each Stat increase
-- Gifted
-- Speed increase
-- Natural Backpack
-- Natural Weapons
-- Enhanced senses
-- Nightvision
-- Flying
-- Speed
-- Subrace (Can gain traits like wings, natural weapons, and a default disguise)
-- Unsleeping
-
-Neutral:
-- Pure
-- Subrace (Animal)
-
-Weak Negatives:
-- Tainted by light
-- Cursed
-- Poor senses
-
-Strong Negatives:
-- Vampirism
-- Waere
-
 
 ***Traits:***
 -------------
@@ -140,14 +88,14 @@ Creatures that have ample storage inside their bodies gain an extra backpack's w
 ### Natural Weapons
 Lots of creatures have natural weapons. It's considered a trained natural weapon if it can effectively be used in battle by that creature. This means a wolf will have a trained bite, where a human will not. 
 
-| Weapon | Dice # Bonus | Damage | Damage Type |Bonus effect |
-| Bite -  normal | 2d6 | 4 | Piercing | - |
-| Bite - Vampire | 2d6 | 6 | Piercing | Allows vampire to feed |
-| Bite - Poisoned | 2d6 | 4 | Piercing | Attempts to poison target |
-| Claw | 3d6 | 6 | Piercing | - |
+| Weapon | Added Dice | Damage | Damage Type | Bonus effect |
+| Bite -  normal | 0d6 | 4 | Bladed | - |
+| Bite - Vampire | 0d6 | 6 | Bladed | Allows vampire to feed |
+| Bite - Poisoned | 0d6 | 4 | Bladed | Attempts to poison target |
+| Claw | 1d6 | 6 | Bladed | - |
 | Grab | 1d6 | 2 | Blunt | Binds target |
-| Kick | 3d6 | 9 | Blunt | - |
-| Punch | 4d6 | 6 | Blunt | - |
+| Kick | 1d6 | 6 | Blunt | - |
+| Punch | 1d6 | 6 | Blunt | - |
 
 ### Nightvision
 Able to see in poor lighting conditions, such as moonlight and starlight.
@@ -191,6 +139,8 @@ If creature is bit by a vampire, not Pure and the vampirism is not removed withi
 
 ### Waere
 Can transform into a beast form once per day, and stays in this form until creature takes a medium rest. This beast form resembles an animal like a bear, wolf, boar, or other medium sized mammal but Large and sapient. When in subrace form, Stats are halved.
+
+In Waere form, cannot wield tools. Instead, grows claws.
 
 Every day that a Waere doesn't transform increases the liklyhood of transforming spontaneously. Every time the creature goes to sleep or falls unconscious, roll to see if transforms. If wakes up in this state, will attempt to fight anyone within melee range or that is blocking their escape path.
 
