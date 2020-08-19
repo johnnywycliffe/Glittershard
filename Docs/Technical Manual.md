@@ -303,7 +303,11 @@ Sometimes a different stat may be used for a skill, usually because of a perk of
 ----------------------
 Magic allows someone to do great feats even without working out daily. There are three schools of magic containing five sub-schools each.
 
-Magical stamina is how many spells can be fired off before resting. Additional spells can be cast, but once the magical stamina is exhausted, casting a spell takes away a hit point per tier of spell. Magical stamina replentishes at a rate of 1 point every short rest.
+Magical stamina is how many spells can be fired off before resting. Additional spells can be cast, but once the magical stamina is exhausted, casting a spell takes away a hit point per tier of spell. Magical stamina replenishes at a rate of 1 point every short rest.
+
+Instead of magical stamina, 1 magical component can be used. This component is consumed.
+
+Magical stamina / component consumption rate is based on tier of magic.
 
 ### Light Magic 
 Light magic is the study of the basic forces. Elemental magics Air, Earth, Water, Health and Nature. These are cleansing forces, the ones rumored to create the world and all it's splendor by the gods.
@@ -415,10 +419,12 @@ Modifiers that affect how much dmage can be dealt. A resistance reduces incoming
 
 Types:
 - Armor piercing: Negates amount of armor equal to value. Does nothing against unarmored targets.
+- Blunt: Blunt weapons. ANything that doesn't hold an edge.
 - Fire: Heat and direct flame exposure. Non magical explosions fall into this category.
 - Ice: Cold and direct ice exposure.
-- Blunt: Blunt weapons. ANything that doesn't hold an edge.
+- Necrotic: Literal life draining, advancing diseases and attacking already made wounds.
 - Piercing: Weapons with a sharp edge
+- Water: Water attacks, exposure to water.
 
 #### Resting & exhaustion
 There are three levels of resting. Longer rests also gain the benefits and drawbacks of smaller rests. You take around six short rests during a medium rest after all.
@@ -487,7 +493,7 @@ Target of fear loses attack action for 10 seconds. Bwn or Speechcraft Vs judgmen
 Automatically bound, and at risk of hypothermia
 
 ### Gold
-Currency in Glittershard. 1 gold is equivalent to a decent meal, and 1 gold is equal 100 pennies for change. All prices are listed in units of gold.
+Currency in Glittershard. 1 gold is equivalent to a decent meal, and 1 gold is equal 100 pennies for change. Unless otherwise stated, all prices are listed in units of gold.
 
 ### Invisible
 While invisible, an entity cannot be seen. They are still physical, can make noise, and be attacked by creatures with Enhanced senses.
@@ -539,12 +545,12 @@ Summoned creatures exist separate from the controlling entity. The summons have 
 #### Magic Stamina
 (LM * 3) Or (DM * 3) Or (Wit * 3), whichever is highest.
 
-#### Max Health
+#### Maximum Health
 level 1: Race base health + (3 * Hea(min 0)).
 Subsequent: Prev max health + (Hea(min 0) + creature level/2 rounded up).
 
-### Max Carry Weight
-(base weight (30) + (10 * Brawn))
+### Maximum Carry Weight
+(base weight (30) + (10 * Brawn)) or 5 + sum of bag carrying caps, whichever is lower.
 
 #### Quality of task
 (Total of all rolls / hours to complete task) * Haste modifier. Time is rounded up to the next whole hour.
