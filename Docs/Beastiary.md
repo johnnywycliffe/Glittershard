@@ -76,7 +76,7 @@ Unable to use Light Magic
 ### Enhanced Senses
 Enhanced senses are better than "human standard" senses, and creatures with it get an extra 2d6 when searching using their senses.
 
-## Flying
+### Flying
 Flying allows an entity to maneuver over obstacles. One must be able to move to fly. Anything that restricts movement will cause a flying entity to stop moving and fall. Maximum height is twice movement speed of the entity. Grants +5 to dodge.
 
 ### Gifted
@@ -89,7 +89,8 @@ Creatures that have ample storage inside their bodies gain an extra backpack's w
 Lots of creatures have natural weapons. It's considered a trained natural weapon if it can effectively be used in battle by that creature. This means a wolf will have a trained bite, where a human will not. 
 
 | Weapon | Added Dice | Damage | Damage Type | Bonus effect |
-| Bite -  normal | 0d6 | 4 | Bladed | - |
+| ------ | ---------- | ------ | ----------- | ------------ |
+| Bite -  Normal | 0d6 | 4 | Bladed | - |
 | Bite - Vampire | 0d6 | 6 | Bladed | Allows vampire to feed |
 | Bite - Poisoned | 0d6 | 4 | Bladed | Attempts to poison target |
 | Claw | 1d6 | 6 | Bladed | - |

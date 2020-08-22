@@ -110,7 +110,7 @@ These are the main combat options given to most creatures.
 - Casting most forms of offensive magic. (Light, Dark, or wit Stats as appropriate)
 - 10 second Why-you-suck speeches
 
-##### Movement actions:
+#### Movement actions:
 Based on the creature's speed, they have a certain number of units they can move per turn. Default is 6 units for a medium creature, but this can change. Each movement action uses some amount of units per grid space, listed in the table. Actions that don't move the creature consume the unit cost without moving the creature
 
 | Action | Unit cost |
@@ -128,7 +128,7 @@ Based on the creature's speed, they have a certain number of units they can move
 
 *If an item is on the ground or in a hard to reach location such as the floor, a high shelf, or a backpack, it costs some movement units to grab. It its in an easy to grab location, it's Trivial.
 
-##### Trivial actions:
+#### Trivial actions:
 - Withdrawing or replacing an item from a belt, holster, sheath, or waist level pouch.
 - Drinking a potion
 - Force feeding a potion down an unconcious person's throat
@@ -138,7 +138,7 @@ Based on the creature's speed, they have a certain number of units they can move
 - Pperating a simple mechanism such as a button or lever
 - Pithy one-liners
 
-####$ Free actions:
+#### Free actions:
 - Dropping a held item
 - Changing defensive posture
 - Screaming in pain
@@ -469,6 +469,11 @@ Cannot move, and only gets offesive action(s) at the start of turn, not Movement
 
 To break a bind, Bwn d6 check vs Bwn d6 check. Person trying to escape has a 2d6 penalty for being bound.
 
+### Brewing
+Potions must be brewed. One hour must be spent creating the mix, and 8 hours must be spent adding magic to it. Potions must not be disturbed while preparing or brewing or they will fail, and as such cannot be brewed on the run or in a fight. Potion preparations can be stored for two days before the brewing starts.
+
+Potion component cost: 1/2 price, rounded up
+
 ### Burning
 When burning, take 1d6 fire damage per turn, negates armor.
 
@@ -506,15 +511,15 @@ When a creature misses a meal, it becomes hungry. There are four stages of hunge
 - 192+ hours: Creature starves to death
 
 ### Maladies
-| Name              | Description
-| ----------------- | -----------------------------------------
-| Vampireism        | Give the vampirism trait to the victim.
-| Morpher's Curse   | Forces an entity to shapeshift into a random race every hour until cured.
-| Flu               | All Skills gain a penalty of -1 until the effect is cured.
-| Wracking Cough    | Each time a d6 action is made, roll a single d6. If the rolled value is 1, remove a d6 from the pool of dice.
-| Broken bones      | Reduces movement speed, strength and dexterity until cured.
-| Open wound        | For every hour wound is left untreated, chance of infection rises.
-| Hypothermia       | For every fifteen minutes in the cold, lose 2d6 health
+| Name | Description |
+| ---- | ----------- |
+| Broken bones | Reduces movement speed, strength and dexterity until cured. |
+| Flu | All Skills gain a penalty of -1 until the effect is cured. |
+| Hypothermia | For every fifteen minutes in the cold, lose 1 health. |
+| Morpher's Curse | Forces an entity to shapeshift into a random Natural or Bestial race every hour until cured. |
+| Open wound | For every hour wound is left untreated, chance of infection rises. |
+| Wracking Cough | Each time a d6 action is made, roll a single d6. If the rolled value is 1, remove a d6 from the pool of dice. |
+| Vampirism | Give the vampirism trait to the victim. |
 
 ### Paralyzed
 A paralyzed entity cannot move or take actions. Refer to the cause of effect for exit condition
@@ -524,6 +529,11 @@ Poisons cause damage over time based on poison type. A heal check of poison leve
 
 ### Summoned
 Summoned creatures exist separate from the controlling entity. The summons have their own stats, but share the actions of their controller.
+
+### Vehicles
+Vehicles can be used to transport people and goods.
+
+A vehicle cannot go faster than it's max speed safely. If a vehicle is being pushed or pulled, it can only go as fast as the speed of the slowest push/puller - 1.
 
 ***Math***
 ----------
@@ -549,7 +559,7 @@ Summoned creatures exist separate from the controlling entity. The summons have 
 level 1: Race base health + (3 * Hea(min 0)).
 Subsequent: Prev max health + (Hea(min 0) + creature level/2 rounded up).
 
-### Maximum Carry Weight
+#### Maximum Carry Weight
 (base weight (30) + (10 * Brawn)) or 5 + sum of bag carrying caps, whichever is lower.
 
 #### Quality of task
